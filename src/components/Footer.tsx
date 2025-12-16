@@ -2,6 +2,8 @@ import { Building2, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const address = "F-39, West Vinod Nagar, East Delhi, Delhi, 110092";
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
 
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -43,8 +45,16 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <MapPin className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5 text-blue-400" />
-                <span className="text-gray-400">F-39, West Vinod Nagar, East Delhi, Delhi, 110092</span>
+                <a 
+                  href={googleMapsUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-start text-gray-400 hover:text-blue-400 transition-colors"
+                  aria-label="View address on Google Maps"
+                >
+                  <MapPin className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5 text-blue-400" />
+                  <span>{address}</span>
+                </a>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 flex-shrink-0 text-blue-400" />
