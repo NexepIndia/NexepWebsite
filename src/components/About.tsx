@@ -22,13 +22,13 @@ export default function About() {
           <div>
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Company</h3>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              Nexep India Pvt Ltd is a premier engineering solutions provider, specializing in delivering comprehensive automation, control systems, and instrumentation solutions for process industries across India.
+              Nexep India Pvt Ltd is a premier engineering solutions provider, specializing in end-to-end automation, control systems, instrumentation, AI/ML integrations, and comprehensive support services for process industries across India.
             </p>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              With years of experience and a commitment to innovation, we partner with world-class manufacturers to bring cutting-edge technology to our clients. Our expertise spans across refineries, petrochemical plants, pharmaceutical facilities, and manufacturing operations.
+              With years of experience and a relentless commitment to innovation, we partner with world-class manufacturers to deliver cutting-edge technologies that streamline operations and foster sustainable advancements. Our expertise spans Chemical, Refineries, Petrochemical plants, pharmaceutical facilities, Metal and Mines, Cement , water, food and Beverages and manufacturing operations, empowering clients with holistic solutions that simplify complex processes.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              We pride ourselves on delivering tailored solutions that enhance operational efficiency, ensure safety, and drive sustainable growth for businesses in the chemical and process industries.
+              We pride ourselves on crafting tailored, innovative offerings that boost operational efficiency, prioritize safety, and enable sustainable growth—ultimately making life easier for industries so they can concentrate on achieving excellence in their core KPIs.
             </p>
           </div>
         </div>

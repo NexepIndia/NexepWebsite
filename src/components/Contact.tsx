@@ -92,7 +92,7 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl p-8 text-white h-full">
+            <div className="bg-gradient-to-br from-green-500 to-green-500 rounded-xl p-8 text-white h-full">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <p className="mb-8 text-blue-100 leading-relaxed">
                 Reach out to our team for inquiries, support, or partnership opportunities. We're here to help you find the right solution for your needs.
@@ -216,7 +216,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center"
+                className="w-full bg-green-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center"
               >
                 {submitted ? (
                   'Message Sent!'

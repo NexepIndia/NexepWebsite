@@ -42,8 +42,6 @@ export default function Partners() {
   const [partners, setPartners] = useState<Partner[]>([]);
 
   useEffect(() => {
-    // ✅ Pehle Supabase se data aa raha tha
-    // Ab hum seedha apne static data se fill kar rahe hain
     setPartners(STATIC_PARTNERS);
   }, []);
 
@@ -60,18 +58,18 @@ export default function Partners() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
           {partners.map((partner) => (
             <div
               key={partner.id}
-              className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow p-8"
+              className="bg-white hover:bg-green-100 hover:border-green-700 rounded-2xl p-8 shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 flex flex-col items-center text-center h-full"
             >
-              <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-                <div className="flex-shrink-0 w-32 h-32 rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+              <div className="flex flex-col items-center text-center h-full">
+                <div className="h-24 w-full flex items-center justify-center mb-6">
                   <img
                     src={partner.logo_url}
                     alt={`${partner.name} logo`}
-                    className="w-80% h-50% object-cover"
+                    className="h-full w-auto object-contain max-w-[160px]"
                   />
                 </div>
                 <div className="flex-1 text-center md:text-left">
@@ -102,7 +100,7 @@ export default function Partners() {
           </div>
         )}
 
-        <div className="mt-16 bg-blue-50 rounded-xl p-8 text-center">
+        <div className="mt-16 bg-green-100 rounded-xl p-8 text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Become a Partner</h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
             We're always looking to collaborate with innovative companies that share our
@@ -110,12 +108,12 @@ export default function Partners() {
           </p>
           <button
             onClick={() => (window.location.href = '#contact')}
-            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition-colors"
           >
             Contact Us
           </button>
         </div>
       </div>
-    </section>
+    </section >
   );
 }

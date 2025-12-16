@@ -19,6 +19,14 @@ const transporter = nodemailer.createTransport({
     pass: process.env.SMTP_PASS
   }
 });
+transporter.verify((error, success) => {
+  if (error) {
+    console.log('SMTP NOT READY:', error.message);
+  } else {
+    console.log('SMTP READY: Server is ready to send emails');
+  }
+});
+
 
 app.post('/send-email', async (req, res) => {
   // ... Tera same email logic ...

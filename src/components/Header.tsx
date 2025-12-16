@@ -36,7 +36,7 @@ export default function Header({ activeSection, onNavigate }: HeaderProps) {
               className="h-8 w-auto"
             />
 
-            <span className="text-xl font-bold text-gray-900">Nexep India</span>
+            <span className="text-xl font-bold text-gray-900">India</span>
           </div>
 
 
