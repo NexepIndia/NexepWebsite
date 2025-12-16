@@ -58,11 +58,17 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 flex-shrink-0 text-blue-400" />
-                <span className="text-gray-400">+91 7042615692</span>
+                <a href="tel:+917042615692" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  +91 7042615692
+                </a>
               </li>
+              
+              {/* 3. Email (Mailto Link) */}
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 flex-shrink-0 text-blue-400" />
-                <span className="text-gray-400">sales@nexep.in</span>
+                <a href="mailto:sales@nexep.in" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  sales@nexep.in
+                </a>
               </li>
             </ul>
           </div>
