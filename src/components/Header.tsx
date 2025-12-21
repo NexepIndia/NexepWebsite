@@ -35,8 +35,6 @@ export default function Header({ activeSection, onNavigate }: HeaderProps) {
               alt="Nexep Logo"
               className="h-8 w-auto"
             />
-
-            <span className="text-xl font-bold text-gray-900">India</span>
           </div>
 
 

@@ -17,10 +17,10 @@ type Product = {
 const PRODUCTS: Product[] = [
   {
     id: 1,
-    name: 'Safety Instrumented System (SIS)',
+    name: 'Metal and Mines Systems with Build Safety',
     category: 'Safety Systems',
     description:
-      'Integrated Safety Instrumented System for emergency shutdown, high-reliability trip logic and SIL-compliant safety functions.',
+      'Integrated Safety Instrumented System Altered emergency shutdown, high-reliability trip logic and SIL-compliant safety functions for Blast Furnace and Casters.',
     image_url: '/images/sis-placeholder.png',
     features: [
       'SIL-capable architecture',
@@ -87,16 +87,24 @@ const PRODUCTS: Product[] = [
     display_order: 6
   },
   {
-    id: 7,
-    name: 'Solenoid / Motorised Control Valve',
-    category: 'Valves',
-    description:
-      'Electrically or pneumatically actuated valves for process control, isolation and automated operations.',
-    image_url: '/images/valve.png',
-    features: ['Fast actuation', 'Modulating control', 'Low leakage options', 'Actuator diagnostics'],
-    applications: 'Control loops, safety isolation, automated valves in skids',
-    display_order: 7
-  },
+  id: 7,
+  name: 'Air Operated Control Valve (CT-100)',
+  category: 'Valves',
+  description:
+    'Pneumatically actuated globe type single seated control valve designed for precise modulating control in industrial process applications.',
+  image_url: '/images/valve.png',
+  features: [
+    'Equal percentage flow characteristic',
+    '50:1 rangeability',
+    'ANSI Class IV low seat leakage',
+    'Stainless steel trim',
+    'Easy maintenance'
+  ],
+  applications:
+    'Process control loops, steam and utility control, automated operation in skids',
+  display_order: 7
+},
+
   {
     id: 8,
     name: 'Skid-mounted Purging & Sample Station',
@@ -161,7 +169,7 @@ export default function ProductsLocal() {
                  <img
                     src={p.image_url}
                     alt={p.name}
-                    className="max-h-80 max-w-70 object-contain"
+                    className="max-h-60 max-w-70 object-contain"
                     onError={(e) => {
                       e.currentTarget.onerror = null;
                       // hide broken image to show grey box instead
