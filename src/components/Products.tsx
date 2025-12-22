@@ -28,7 +28,7 @@ const PRODUCTS: Product[] = [
       'Redundant I/O and diagnostics',
       'Fast fail-safe actuation'
     ],
-    applications: 'Critical process shutdowns, refinery safety, chemical reactors',
+    applications: 'Smart Tuyers, leakage detection, Purging Systems, AI/ML based safety systems for gases',
     display_order: 1
   },
   {
