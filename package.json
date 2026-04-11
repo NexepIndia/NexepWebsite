@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "vite preview --host 0.0.0.0 --port $PORT --strictPort",
+    "start": "vite preview --host 0.0.0.0 --port 5173 --strictPort",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json"
@@ -18,8 +18,8 @@
     "express": "^5.2.1",
     "lucide-react": "^0.344.0",
     "nodemailer": "^7.0.11",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "serve": "^14.2.5"
   },
   "devDependencies": {

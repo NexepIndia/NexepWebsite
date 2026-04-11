@@ -92,7 +92,7 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <div className="bg-gradient-to-br from-green-500 to-green-500 rounded-xl p-8 text-white h-full">
+            <div className="bg-gradient-to-br from-green-700 to-green-900 rounded-xl p-8 text-white h-full">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <p className="mb-8 text-blue-100 leading-relaxed">
                 Reach out to our team for inquiries, support, or partnership opportunities. We're here to help you find the right solution for your needs.
@@ -115,7 +115,7 @@ export default function Contact() {
                   <Phone className="h-6 w-6 mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold mb-1">Phone</h4>
-                    <p className="text-blue-100">+91 7042615692</p>
+                    <p className="text-blue-100">+91 9219302637</p>
                     <p className="text-blue-100">+91 8882828900</p>
                   </div>
                 </div>
