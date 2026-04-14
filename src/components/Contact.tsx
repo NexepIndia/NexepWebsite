@@ -125,6 +125,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
                     <p className="text-blue-100">info@nexep.in</p>
+                    <p className='text-blue-100'>propsal@nexep.in</p>
                     <p className="text-blue-100">sales@nexep.in</p>
                   </div>
                 </div>
